@@ -156,7 +156,31 @@
               }
             }
           }
+        },
+
+        {
+          "title": "Banner",
+          "id": "banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Banner",
+                  "model": "banner",
+                  "image": "/assets/banner.jpg",
+                  "imageAlt": "Office background",
+                  "heading": "Welcome to Puppu Papa’s Portal",
+                  "subheading": "<p>Experience simplicity at scale</p>"
+                }
+              }
+            }
+          }
         }
+        
+        
+
+
       ]
     }
   ]
