@@ -1,44 +1,45 @@
 .banner {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, black 50%, transparent);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.banner .subheading {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+@media (width <= 768px) {
+  .banner {
+    padding: 50px 10px;
   }
-  
-  .banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .banner-content {
-    position: relative;
-    z-index: 1;
-  }
-  
+
   .banner h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-size: 2rem;
   }
-  
+
   .banner .subheading {
-    margin-top: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .banner {
-      padding: 50px 10px;
-    }
-    .banner h1 {
-      font-size: 2rem;
-    }
-    .banner .subheading {
-      font-size: 1rem;
-    }
-  }
-  
+}
